@@ -10,7 +10,7 @@ Nonprofit project aimed to create general e-dashboard for L.I.T. Zwickau
 
 - 🔭 I’m currently working on **non-profit project for L.I.T. Zwickau Dashboard**
 
-- 🌱 I’m currently learning **a lot of thing from automotive industry.**
+- 🌱 I’m currently learning **a lot of things from automotive industry.**
 
 - 💬 Ask me about **My skills, education and expertize.**
 
