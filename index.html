@@ -42,6 +42,7 @@
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
 
+
                     <li>
                         <a class="active-menu" href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a>
                     </li>
@@ -76,11 +77,32 @@
                 <!-- /. ROW  -->
 
                 
-                
-                <iframe title="PowerBi SDashboard" width="1140" height="541.25" src=https://app.powerbi.com/reportEmbed?reportId=7d7e4a7b-f0ff-4618-813f-b290bf1bedcc&autoAuth=true&ctid=d631b351-3e44-4ddd-9a52-2291c3a9f1e5 frameborder="0" allowFullScreen="true"></iframe>
-					
+                <div style="--aspect-ratio: 16/9;">
+                <iframe title="PowerBi SDashboard" width="1140" height="700.25" src=https://app.powerbi.com/reportEmbed?reportId=7d7e4a7b-f0ff-4618-813f-b290bf1bedcc&autoAuth=true&ctid=d631b351-3e44-4ddd-9a52-2291c3a9f1e5 frameborder="0" allowFullScreen="true"></iframe>
+					</div> 
 				</div> 
-			 
+			 <style>[style*="--aspect-ratio"] > :first-child {
+  width: 100%;
+}
+[style*="--aspect-ratio"] > img {  
+  height: auto;
+} 
+@supports (--custom:property) {
+  [style*="--aspect-ratio"] {
+    position: relative;
+  }
+  [style*="--aspect-ratio"]::before {
+    content: "";
+    display: block;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }  
+  [style*="--aspect-ratio"] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }  
+}</style>
 				
 			
 		<!--/.row-->
@@ -112,7 +134,7 @@
     <!-- /. WRAPPER  -->
     <!-- JS Scripts-->
     <!-- jQuery Js -->
-    <script src="assets/js/jquery-1.10.2.js"></script>
+     <script src="assets/js/jquery-1.10.2.js"></script>
     <!-- Bootstrap Js -->
     <script src="assets/js/bootstrap.min.js"></script>
 	 
